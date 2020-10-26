@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Preloading Fonts -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap"
+        as="font">
+    <!-- Preloading Styles -->
+    <link rel="preload" href="styles/aos.css" as="style">
+    <link rel="preload" href="styles/main.css" as="style">
+    <!-- Preloading Scripts -->
+    <link rel="preload" href="scripts/jquery-3.5.1.js" as="script">
+    <link rel="preload" href="scripts/aos.js" as="script">
+    <link rel="preload" href="scripts/main.js" as="script">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap">
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/aos.css">
+    <link rel="stylesheet" href="styles/main.css">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicons/favicon.ico">
+
+    <meta property="og:title" content="Детокс программа «Чистая лимфа — моя красота, молодость и здоровье»">
+    <meta property="og:url" content="https://vesbalans.ru/land/limfa">
+    <meta property="og:description"
+        content="Единственный в РФ онлайн-центр безвозвратного похудения, работающий по уникальной методике разгона метаболизма.">
+    <meta property="og:image" content="images/preview.jpg">
+    <meta property="og:type" content="article">
+
+    <title>Присоединяйся к семье APL</title>
+</head>
+
+<body>
+    <!-- [if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com">upgrade your browser</a> to improve your experience and security.</p><![endif] -->
+
+    <!-- Preloader -->
+    <div id="hellopreloader">
+        <div id="hellopreloader_preload"></div>
+    </div>
+    <script type="text/javascript">
+        var hellopreloader = document.getElementById("hellopreloader_preload");
+
+        function fadeOutnojquery(el) {
+            el.style.opacity = 1;
+            var interhellopreloader = setInterval(function () {
+                el.style.opacity = el.style.opacity - 0.05;
+                if (el.style.opacity <= 0.05) {
+                    clearInterval(interhellopreloader);
+                    hellopreloader.style.display = "none";
+                }
+            }, 16);
+        }
+        window.onload = function () {
+            setTimeout(function () {
+                fadeOutnojquery(hellopreloader);
+            }, 500); // Время прелоадера 0.5s
+        };
+    </script>
+    <style>
+        #hellopreloader>p {
+            display: none;
+        }
+
+        #hellopreloader_preload {
+            display: block;
+            position: fixed;
+            z-index: 99999;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            background-color: var(--color_dark);
+            background-image: url("images/preloader_tail-spin.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 48px;
+        }
+    </style>
+
+    <!-- Header -->
+    <header class="show">
+        <div class="container">
+            <div class="header-top">
+                <a class="top-logo" href="#">
+                    <span>Olga</span> Team
+                </a>
+                <a class="top-contact" href="tel:+79867642355">
+                    +7 986 764 23 55
+                </a>
+            </div>
+            <nav class="header-nav">
+                <a class="nav-link" id="link-alt">ALT</a>
+                <a class="nav-link" id="link-brn">BRN</a>
+                <a class="nav-link" id="link-bty">BTY</a>
+                <a class="nav-link" id="link-grw">GRW</a>
+                <a class="nav-link" id="link-gts">GTS</a>
+                <a class="nav-link" id="link-hpr">HPR</a>
+                <a class="nav-link" id="link-hrt">HRT</a>
+                <a class="nav-link" id="link-ice">ICE</a>
+                <a class="nav-link" id="link-mls">MLS</a>
+                <a class="nav-link" id="link-nrm">NRM</a>
+                <a class="nav-link" id="link-pwr-m">PWR man</a>
+                <a class="nav-link" id="link-pwr-w">PWR woman</a>
+                <a class="nav-link" id="link-rlx">RLX</a>
+                <a class="nav-link" id="link-sld">SLD</a>
+                <a class="nav-link" id="link-stp">STP</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Intro -->
+    <div class="intro">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="intro-top">
+                <div class="text" data-aos="fade-right">
+                    <p class="heading-xl">Приветствую <span>Вас</span>!</p>
+                    <p class="heading-lg">Меня зовут <span>Ольга</span>.</p>
+                    <p class="heading-md">И мне очень приятно что <span>Вы</span> сейчас находитесь на моей страничке и
+                        читаете эти строки.</p>
+                    <p class="heading-sm">Здесь <span>Вы</span> сможете получить всю интересующую <span>Вас</span>
+                        информацию, касательно продукта «<span>ACUMULLIT SA</span>».</p>
+                    <p class="heading-sm">Не стесняйтесь задавать вопросы, пишите и звоните во все удобные для
+                        <span>Вас</span> социальные сети. Я здесь для того что бы помочь <span>Вам</span>, как когда-то
+                        помогли мне.</p>
+                </div>
+                <img src="images/photo.png" alt="Фотография Ольги Швецовой" data-aos="fade-left">
+            </div>
+
+            <div class="intro-info" data-aos="fade-up">
+                <p class=" heading-md">
+                    В любое время <span>Вы</span> можете получить консультацию по эксклюзивной технологии изготовления
+                    Драже «<span>APL</span>», по их применению, по скидкам и акциям, регистрации, как сделать заказ, по
+                    маркетингу и по другим вопросам по телефону:
+                    <a href="tel:+79867642355">
+                        +7 986 764 23 55
+                    </a>
+                </p>
+            </div>
+
+            <div class="intro-contacts" data-aos="fade-up">
+                <p class="heading-md">Жду <span>Ваших</span> звонков:</p>
+                <a class="social-link sl-skype" rel="nofollow" href="skype:valerion43?call"
+                    target="_blank"><span>S</span>kype</a>
+                <a class="social-link sl-whatsapp" rel="nofollow" href="https://api.whatsapp.com/send?phone=79867642355"
+                    target="_blank"><span>W</span>hats<span>A</span>pp</a>
+                <a class="social-link sl-viber" rel="nofollow" href="viber://chat?number=+79867642355"
+                    target="_blank"><span>V</span>iber</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main -->
+    <main>
+        <section class="item" id="alt" data-aos="fade-up">
+            <div class="overlay"></div>
+            <div class="content">
+                <img class="content-image" src="images/img_alt.png" alt="Драже APL">
+                <div class="content-text">
+                    <p class="heading-md">Драже «<span>ALT</span>»</p>
+                    <p class="heading-lg">Против <span>АЛЛЕРГИИ</span></p>
+                    <p class="heading-sm">Цена: <span>3750 ₽</spa>
+                    </p>
+                    <p class="heading-xs">* Полная информация о продукте - <a
+                            href="https://ru.aplgo.com/ru/acumullitsa/" target="_blank">на сайте производителя</a></p>
+                </div>
+            </div>
+        </section>
+        <section class="item" id="brn" data-aos="fade-up">
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="content-text">
+                    <p class="heading-md">Драже «<span>BRN</span>»</p>
+                    <p class="heading-lg">Для вашего <span>МОЗГА</span></p>
+                    <p class="heading-sm">Цена: <span>5000 ₽</spa>
+                    </p>
+                    <p class="heading-xs">* Полная информация о продукте - <a
+                            href="https://ru.aplgo.com/ru/acumullitsa/" target="_blank">на сайте производителя</a></p>
+                </div>
+                <img class="content-image" src="images/img_brn.png" alt="Драже APL">
+            </div>
+        </section>
+        <section class="item" id="bty" data-aos="fade-up">
+            <div class="overlay"></div>
+            <div class="content">
+                <img class="content-image" src="images/img_bty.png" alt="Драже APL">
+                <div class="content-text">
+                    <p class="heading-md">Драже «<span>BTY</span>»</p>
+                    <p class="heading-lg">Для внутренней <span>КРАСОТЫ</span></p>
+                    <p class="heading-sm">Цена: <span>5000 ₽</spa>
+                    </p>
+                    <p class="heading-xs">* Полная информация о продукте - <a
+                            href="https://ru.aplgo.com/ru/acumullitsa/" target="_blank">на сайте производителя</a></p>
+                </div>
+            </div>
+        </section>
+        <section class="item" id="grw" data-aos="fade-up">
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="content-text">
+                    <p class="heading-md">Драже «<span>GRW</span>»</p>
+                    <p class="heading-lg">Для <span>ИММУНИТЕТА</span></p>
+                    <p class="heading-sm">Цена: <span>2500 ₽</spa>
+                    </p>
+                    <p class="heading-xs">* Полная информация о продукте - <a
+                            href="https://ru.aplgo.com/ru/acumullitsa/" target="_blank">на сайте производителя</a></p>
+                </div>
+                <img class="content-image" src="images/img_grw.png" alt="Драже APL">
+            </div>
+        </section>
+        <section class="item" id="gts" data-aos="fade-up">
+            <div class="overlay"></div>
+            <div class="content">
+                <img class="content-image" src="images/img_gts.png" alt="Драже APL">
+                <div class="content-text">
+                    <p class="heading-md">Драже «<span>GTS</span>»</p>
+                    <p class="heading-lg">Для жизненной <span>ЭНЕРГИИ</span></p>
+                    <p class="heading-sm">Цена: <span>2500 ₽</spa>
+                    </p>
+                    <p class="heading-xs">* Полная информация о продукте - <a
+                            href="https://ru.aplgo.com/ru/acumullitsa/" target="_blank">на сайте производителя</a></p>
+                </div>
+            </div>
+        </section>
+        <section class="item" id="hpr" data-aos="fade-up">
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="content-text">
+                    <p class="heading-md">Драже «<span>HPR</span>»</p>
+                    <p class="heading-lg">Для вашей <span>ПЕЧЕНИ</span></p>
+                    <p class="heading-sm">Цена: <span>3750 ₽</spa>
+                    </p>
+                    <p class="heading-xs">* Полная информация о продукте - <a
+                            href="https://ru.aplgo.com/ru/acumullitsa/" target="_blank">на сайте производителя</a></p>
+                </div>
+                <img class="content-image" src="images/img_hpr.png" alt="Драже APL">
+            </div>
+        </section>
+        <section class="item" id="hrt" data-aos="fade-up">
+            <div class="overlay"></div>
+            <div class="content">
+                <img class="content-image" src="images/img_hrt.png" alt="Драже APL">
+                <div class="content-text">
+                    <p class="heading-md">Драже «<span>HRT</span>»</p>
+                    <p class="heading-lg">Для вашего <span>СЕРДЦА</span></p>
+                    <p class="heading-sm">Цена: <span>3750 ₽</spa>
+                    </p>
+                    <p class="heading-xs">* Полная информация о продукте - <a
+                            href="https://ru.aplgo.com/ru/acumullitsa/" target="_blank">на сайте производителя</a></p>
+                </div>
+            </div>
+        </section>
+        <section class="item" id="ice" data-aos="fade-up">
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="content-text">
+                    <p class="heading-md">Драже «<span>ICE</span>»</p>
+                    <p class="heading-lg">Для здорового <span>ПИЩЕВАРЕНИЯ</span></p>
+                    <p class="heading-sm">Цена: <span>3750 ₽</spa>
+                    </p>
+                    <p class="heading-xs">* Полная информация о продукте - <a
+                            href="https://ru.aplgo.com/ru/acumullitsa/" target="_blank">на сайте производителя</a></p>
+                </div>
+                <img class="content-image" src="images/img_ice.png" alt="Драже APL">
+            </div>
+        </section>
+        <section class="item" id="mls" data-aos="fade-up">
+            <div class="overlay"></div>
+            <div class="content">
+                <img class="content-image" src="images/img_mls.png" alt="Драже APL">
+                <div class="content-text">
+                    <p class="heading-md">Драже «<span>MLS</span>»</p>
+                    <p class="heading-lg">Против <span>ПАРАЗИТОВ</span></p>
+                    <p class="heading-sm">Цена: <span>3750 ₽</spa>
+                    </p>
+                    <p class="heading-xs">* Полная информация о продукте - <a
+                            href="https://ru.aplgo.com/ru/acumullitsa/" target="_blank">на сайте производителя</a></p>
+                </div>
+            </div>
+        </section>
+        <section class="item" id="nrm" data-aos="fade-up">
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="content-text">
+                    <p class="heading-md">Драже «<span>NRM</span>»</p>
+                    <p class="heading-lg">Для борьбы <span>С ДИАБЕТОМ</span></p>
+                    <p class="heading-sm">Цена: <span>2500 ₽</spa>
+                    </p>
+                    <p class="heading-xs">* Полная информация о продукте - <a
+                            href="https://ru.aplgo.com/ru/acumullitsa/" target="_blank">на сайте производителя</a></p>
+                </div>
+                <img class="content-image" src="images/img_nrm.png" alt="Драже APL">
+            </div>
+        </section>
+        <section class="item" id="pwr-m" data-aos="fade-up">
+            <div class="overlay"></div>
+            <div class="content">
+                <img class="content-image" src="images/img_pwr-m.png" alt="Драже APL">
+                <div class="content-text">
+                    <p class="heading-md">Драже «<span>PWR man</span>»</p>
+                    <p class="heading-lg">Для <span>МУЖСКОГО</span> здоровья</p>
+                    <p class="heading-sm">Цена: <span>2500 ₽</spa>
+                    </p>
+                    <p class="heading-xs">* Полная информация о продукте - <a
+                            href="https://ru.aplgo.com/ru/acumullitsa/" target="_blank">на сайте производителя</a></p>
+                </div>
+            </div>
+        </section>
+        <section class="item" id="pwr-w" data-aos="fade-up">
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="content-text">
+                    <p class="heading-md">Драже «<span>PWR woman</span>»</p>
+                    <p class="heading-lg">Для <span>ЖЕНСКОГО</span> здоровья</p>
+                    <p class="heading-sm">Цена: <span>2500 ₽</spa>
+                    </p>
+                    <p class="heading-xs">* Полная информация о продукте - <a
+                            href="https://ru.aplgo.com/ru/acumullitsa/" target="_blank">на сайте производителя</a></p>
+                </div>
+                <img class="content-image" src="images/img_pwr-w.png" alt="Драже APL">
+            </div>
+        </section>
+        <section class="item" id="rlx" data-aos="fade-up">
+            <div class="overlay"></div>
+            <div class="content">
+                <img class="content-image" src="images/img_rlx.png" alt="Драже APL">
+                <div class="content-text">
+                    <p class="heading-md">Драже «<span>RLX</span>»</p>
+                    <p class="heading-lg">Против <span>СТРЕССА</span></p>
+                    <p class="heading-sm">Цена: <span>2500 ₽</spa>
+                    </p>
+                    <p class="heading-xs">* Полная информация о продукте - <a
+                            href="https://ru.aplgo.com/ru/acumullitsa/" target="_blank">на сайте производителя</a></p>
+                </div>
+            </div>
+        </section>
+        <section class="item" id="sld" data-aos="fade-up">
+            <div class="overlay"></div>
+            <div class="content">
+                <div class="content-text">
+                    <p class="heading-md">Драже «<span>SLD</span>»</p>
+                    <p class="heading-lg">Для ваших <span>СУСТАВОВ</span></p>
+                    <p class="heading-sm">Цена: <span>2500 ₽</spa>
+                    </p>
+                    <p class="heading-xs">* Полная информация о продукте - <a
+                            href="https://ru.aplgo.com/ru/acumullitsa/" target="_blank">на сайте производителя</a></p>
+                </div>
+                <img class="content-image" src="images/img_sld.png" alt="Драже APL">
+            </div>
+        </section>
+        <section class="item" id="stp" data-aos="fade-up">
+            <div class="overlay"></div>
+            <div class="content">
+                <img class="content-image" src="images/img_stp.png" alt="Драже APL">
+                <div class="content-text">
+                    <p class="heading-md">Драже «<span>STP</span>»</p>
+                    <p class="heading-lg">Против <span>БОЛИ</span></p>
+                    <p class="heading-sm">Цена: <span>2500 ₽</spa>
+                    </p>
+                    <p class="heading-xs">* Полная информация о продукте - <a
+                            href="https://ru.aplgo.com/ru/acumullitsa/" target="_blank">на сайте производителя</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>©&nbsp;Данная&nbsp;страница
+                создана&nbsp;на&nbsp;правах
+                партнерской&nbsp;программы
+                <span>
+                    ООО&nbsp;«ЭйПиЭл&nbsp;РУС»&nbsp;&&nbsp;APLGO&nbsp;LTD.
+                </span>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Scroll Down -->
+    <span id="scroll-down">
+        <img class="arrow" src="images/btn_scroll-down.svg">
+    </span>
+
+    <!-- "Back to Top" Button -->
+    <a id="back-to-top">
+        <img src="images/btn_back-to-top.svg">
+    </a>
+
+    <!-- Scripts -->
+    <script src="scripts/jquery-3.5.1.js"></script>
+    <script src="scripts/aos.js"></script>
+    <script src="scripts/main.js"></script>
+    <!-- Initialize aos.js -->
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
