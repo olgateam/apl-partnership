@@ -625,8 +625,8 @@ header {
 .video-link {
     position: relative;
     overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
     margin: 0 8px 16px 8px;
 
     .bg-img {
@@ -650,7 +650,7 @@ header {
 }
 
 .video-link:hover {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 
     .bg-img {
         filter: brightness(0.45);
@@ -658,6 +658,12 @@ header {
 
     .btn-play {
         filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.5));
+    }
+}
+
+.video-link:active {
+    .btn-play {
+        filter: none;
     }
 }
 
